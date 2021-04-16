@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <%- include('../partials/head') %> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/css/home.css">
+  <title>Home</title>
+</head>
+<body>
+  <main>
+    <!-- left column -->
+    <div class="left-col">
+      <div class="nav-items">
+        <h2 style="color:#06def1;">Home</h2>
+      </div>
+      <div class="nav-items">
+        <h2>Explore</h2>
+      </div>
+      <div class="nav-items">
+        <h2>Notifications</h2>
+      </div>
+      <div class="nav-items">
+        <h2>Messages</h2>
+      </div>
+      <div class="nav-items">
+        <h2>Bookmarks</h2>
+      </div>
+      <div class="nav-items">
+        <h2>Lists</h2>
+      </div>
+      <div class="nav-items">
+        <h2>Profile</h2>
+      </div>
+      <div class="nav-items">
+        <h2>More</h2>
+      </div>
+      <div class="nav-items">
+        <button type="submit">Tweet</button>
+      </div>
+    </div>
+    <!-- left column end -->
+
+    <!-- middle col -->
+    <div class="middle-col">
+      <div class="create-tweet">
+        <h1 class="home-title">Home</h1>
+        <form action="/createTweet" method="POST">
+          <div class="post-item">
+            <img src=".././../static/images/avatar.jpg" alt="" srcset="" class="avatar">
+            <input type="text" name="content" required placeholder="What's happening?"> <br>
+          </div>
+          <button type="submit">Tweet</button>
+        </form>
+      </div>
+      <div class="tweet-content">
+        <div class="img-avatar">
+          <img src=".././../static/images/avatar.jpg" alt="" srcset="" class="avatar">
+        </div>
+        <div class="tweet">
+          <h4>Jack</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+            dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+          </p>
+        </div>
+      </div>
+      <div class="tweet-content">
+        <div class="img-avatar">
+          <img src=".././../static/images/avatar2.png" alt="" srcset="" class="avatar">
+        </div>
+        <div class="tweet">
+          <h4>Grace</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo?
+            lorem30
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- middle col end -->
+
+    <!-- right col start -->
+    <div class="right-col">
+      <form action="#" method="POST">
+        <input type="text" name="content" placeholder="Search Twitter">
+      </form>
+      <div class="right-side">
+        <h2>Trends for you</h2>
+        <div class="trend-contents">
+          <p class="trending">Trending worldwide</p>
+          <h4>#BreakingNews</h4>
+          <div class="breaking-news">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quos?</p>
+          </div>
+        </div>
+
+        <div class="trend-contents">
+          <p class="trending">Trending worldwide</p>
+          <h4>#BreakingNews</h4>
+          <div class="breaking-news">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quos?</p>
+          </div>
+        </div>
+
+        <div class="trend-contents">
+          <p class="trending">Trending worldwide</p>
+          <h4>#BreakingNews</h4>
+          <div class="breaking-news">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quos?</p>
+          </div>
+        </div>
+        
+        <div>
+          <p><a href="#">Show more</a></p>
+        </div>
+
+      </div>
+    </div>
+    <!--  -->
+  </main>
+</body>
+</html>

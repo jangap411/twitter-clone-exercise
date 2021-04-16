@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Welcome</title>
+</head>
+<body>
+    <div class="form-container">
+      <div class="form-header">
+        <h1>Create your first Tweet</h1>
+        <h3></h3>
+      </div>
+      <div class="form-itself">
+        <form action="/createTweet" method="POST">
+          USERNAME <input type="text" name="username" required> <br>
+          PASSWORD <input type="text" name="password" required> <br>
+          TWEET <input type="text" name="content" required> <br>
+          <button type="submit">submit</button>
+        </form>
+        <p><a href="/tweets" target="_blank" rel="noopener noreferrer">view tweets</a></p>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <%- include('../partials/head') %> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/home.css">
+  <title>Home</title>
+</head>
+<body>
+  <main>
+    <!-- left column -->
+    <%- include('../partials/left-col') %>
+    <!-- left column end -->
+
+    <!-- middle col -->
+    <div class="middle-col">
+      <div class="create-tweet">
+        <h1 class="home-title">Home</h1>
+        <form action="/createTweet" method="POST">
+          <div class="post-item">
+            <img src="images/avatar.jpeg" alt="" srcset="" class="avatar">
+            <input type="text" name="content" required placeholder="What's happening?"> <br> <br>
+            <input type="text" name="UserId" value="<%= userid %>" style="display: none !important;">
+            <input type="text" name="username" value="<%= name %>" style="display: none !important;">
+            <input type="text" name="password" value="<%= password %>" style="display: none !important;">
+          </div>
+          <button type="submit">Tweet</button>
+        </form>
+      </div>
+
+      <%for(let t of tweetData.tweets) {%>
+        <div class="tweet-content">
+          <div class="img-avatar">
+            <img src="images/avatar.jpeg" alt="" srcset="" class="avatar">
+          </div>
+          <div class="tweet">
+            <b><%= t.dataValues.User.dataValues.username %> </b> <span><%= t.dataValues.timeCreated.toDateString() %></span>
+            <p>
+              <%= t.dataValues.content %>
+            </p>
+          </div>
+        </div>
+      <%}%>
+    </div>
+
+    <!-- middle col end -->
+    <!-- right col start -->
+    <%- include('../partials/right-col') %>
+  </main>
+</body>
+</html>
